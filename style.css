@@ -246,7 +246,8 @@ button {
     /* background-size: contain; */
     position: absolute;
     bottom: 0;
-    align-items: center;
+
+    /* align-items: center; */
     z-index: -10;
     /* background-attachment: fixed; */
 }
@@ -296,7 +297,7 @@ button {
 /* header seaction ends heair */
 /* learn-more section starts heair */
 .learn-more{
-    height: 90vh;
+    min-height: 85vh;
     max-width: 100vw;
     background-color: white;
     display: flex;
@@ -309,7 +310,7 @@ button {
     align-items: center;
     flex-direction: column;
     background-color: white;
-    width: 80vw;
+    /* width: 80vw; */
     max-width: 70rem;
 }
 .learn-more-content p{
@@ -356,12 +357,19 @@ button {
 
  /* intro video section starts heair */
  .intro-video{
-    height: 90vh;
     max-width: 100vw;
-    padding: 0 10vw;
+    /* width: 100vw; */
+    padding: 3rem 0;
+    /* padding: 0 10vw; */
     box-sizing: border-box;
-    display: flex;
     background-image: linear-gradient(125deg , #FA8442, #EB14D5);
+ }
+ .intro-video .max-width{
+  min-height: 85vh;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
  }
  .intro-video .intro-video-left{
     width: 50%;
@@ -383,7 +391,8 @@ button {
 }
 .intro-video-content{
   display: flex;
-  width: 70%;
+  max-width: 29rem;
+  /* width: 70%; */
   align-items: center;
   padding-top: 1.5rem;
  
@@ -421,6 +430,26 @@ button {
       width: 90vw;
       margin: 0 5vw;
     }
+    .intro-video .max-width{
+      flex-direction: column;
+     }
+     .intro-video .intro-video-left {
+      width: 100%;
+     }
+     .intro-video .intro-video-left p {
+      font-size: 1.1rem;
+     }
+     .intro-video-content{
+      max-width: 40rem;
+     }
+     .intro-video-left .intro-video-content p{
+      font-size: 0.9rem;
+     }
+     .intro-video .intro-video-right{
+      margin-top: 3rem;
+      width: 70%;
+      min-width: 20rem;
+     }
     .menu-item {
       margin: 0 1rem;
     }
@@ -454,13 +483,13 @@ button {
     width: 6rem;
 }
   .header{
-    height: 38rem;
+    max-height: 43rem;
   }
   .header-content h1{
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
   .header-content p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .header-content button{
     font-size: 1rem;
@@ -476,6 +505,13 @@ button {
       padding-bottom: 10px;
       padding-top: 15px;
   }
+  .learn-more-content p{
+    font-size: 0.9rem;
+  }
+  .learn-more-content h1{
+    font-size: 2.8rem;
+  }
+ 
   /* .mobilemenu{
       display: block;
   } */

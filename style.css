@@ -291,7 +291,8 @@ button {
 /* header seaction ends heair */
 /* learn-more section starts heair */
 .learn-more {
-  min-height: 85vh;
+  min-height: 30rem;
+  height: 85vh;
   max-width: 100vw;
   background-color: white;
   display: flex;
@@ -469,17 +470,156 @@ button {
   width: 90%;
   max-width: 30rem;
 }
+ /* footer starts heair */
+footer .social-media{
+  margin-top: 3rem;
+  padding: 6px 0;
+  width: 100%;
+  background-color: #20c67f;
+}
+footer .social-media .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-media p{
+  color: white;
+  font-size: 1rem;
+}
+.social-media-icon a{
+  margin-left: 1.7rem;
+}
+.social-media-icon a img{
+  width: 30px;
+}
+.footer-grid {
+  padding-top: 4rem;
+  display: grid;
+  padding-bottom: 3rem;
+  grid-template-areas:
+  "about quick-links contact";
+  color: rgb(88, 88, 88);
+}
+footer a{
+  color: rgb(88, 88, 88);
+  text-decoration: none;
+}
+.about {
+  grid-area: about;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+}
+.about a{
+  display: flex;
+  margin-top: 1.2rem;
+}
 
+.about h2 {
+  font-size: 2rem;
+  color:#563CF3;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.about p {
+  font-size: 0.9rem;
+  color:#6a6a6a;
+  font-weight: 400;
+  max-width: 30rem;
+  margin-bottom: 0.5rem;
+}
+.about a p{
+  padding-left: 9px;
+  font-size: 1rem;
+  color: rgb(88, 88, 88);
+}
+.about a img{
+  width: 25px;
+  height: 24.76px;
+}
+.quick-links {
+  grid-area: quick-links;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* margin-right: 2rem; */
+  min-width: 15rem;
+  float: right;
+}
+.quick-links h3{
+  font-size: 1.5rem;
+  color: #363636;
+  padding-bottom: 1rem;
+}
+.quick-links a{
+  display: block;
+  padding-bottom: 1rem;
+}
+.contact {
+  grid-area: contact;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.contact h3{
+  font-size: 1.5rem;
+  color: #363636;
+  padding-bottom: 1rem;
+}
+.contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact form input{
+  border: 1px solid #15EBEB;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: white;
+  margin-bottom: 0.5rem;
+  width: 18rem;
+}
+.contact form textarea{
+  border: 1px solid #15EBEB;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: white;
+  margin-bottom: 0.5rem;
+  width: 18rem;
+  min-height: 5rem;
+}
+.contact form button{
+  border-radius: 3px;
+  padding: 6px 13px;
+  background-color: #15EBEB;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  float: left;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.contact form button:hover{
+  background-color: #0cbaba;
+}
 
 
 
 /* media quiery */
 @media only screen and (max-width: 1200px) {
+  footer .footer-grid{
+    grid-template-areas: 
+    "about quick-links"
+    "contact contact";
+  }
 }
 @media only screen and (max-width: 930px) {
   .max-width {
     width: 90vw;
     margin: 0 5vw;
+  }
+  footer .social-media p{
+    display: none;
   }
   .intro-video .max-width {
     flex-direction: column;
@@ -553,6 +693,12 @@ button {
 @media only screen and (max-width: 700px) {
   .hamburger {
     display: block;
+  }
+  footer .footer-grid{
+    grid-template-areas: 
+    "about "
+    "quick-links"
+    "contact ";
   }
   .navbar .logo img {
     width: 6rem;

@@ -29,7 +29,7 @@
             <img src="../IMG/icons/gis_earth-network-o.png" alt="" />
           </div>
           <div class="profile">
-            <div class="profile-wrapper">
+            <div class="profile-wrapper" onclick="showprofileMenu()">
               <img src="../IMG/profile.png" alt="" />
             </div>
           </div>
@@ -38,30 +38,30 @@
     </nav>
     <!-- profile menu starts heare......................... -->
     <div class="profile-menu">
-      <div class="flex border-bottom-profile ">
+      <div class="flex border-bottom-profile">
         <div class="secondry-profile-img">
           <img src="../IMG/profile.png" alt="" />
         </div>
         <div class="flex details-profile-menu">
-          <h2>Sumit Choudhary</h2>
-          <p>Uit rgpv Bhopal</p>
+          <a href=""><h2>Sumit Choudhary</h2></a>
+          <a href=""><p>Uit rgpv Bhopal</p> </a>
         </div>
       </div>
-      <div class="flex border-bottom-profile ">
+      <div class="flex border-bottom-profile">
         <div class="profile-menu-icon">
-            <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-user"></i>
         </div>
-          <p>Profile</p>
+        <a href="">Profile</a>
       </div>
-      <div class="flex border-bottom-profile ">
+      <div class="flex border-bottom-profile">
         <div class="profile-menu-icon">
-            <i class="fa-solid fa-gear"></i>
+          <i class="fa-solid fa-user"></i>
         </div>
-          <p>Settings</p>
+        <a href="">Setting</a>
       </div>
-      <div class="flex border-bottom-profile ">
+      <div class="flex border-bottom-profile">
         <div class="profile-menu-icon"></div>
-          <p>Logout</p>
+        <a href="">Logout</a>
       </div>
     </div>
     <!-- <nav class="community-nav">
@@ -73,5 +73,16 @@
             <div class="com-link-nav">Comptitions</div>
         </div>
     </nav> -->
+
+    <script>
+      const profile_menu = document.querySelector(".profile-menu");
+      function showprofileMenu() {
+        if (profile_menu.classList.contains("show-profile-menu")) {
+          profile_menu.classList.remove("show-profile-menu");
+        } else {
+          profile_menu.classList.add("show-profile-menu");
+        }
+      }
+    </script>
   </body>
 </html>

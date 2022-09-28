@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    font-family: Poppins;
+    position: relative;
 }
 #main-nav {
   background-color: #3570E1;
@@ -65,6 +76,7 @@
 .profile{
     height: 3.1rem;
     width: 3.1rem;
+    position: relative;
 }
 .profile-wrapper{
     height: 100%;
@@ -81,6 +93,52 @@
     border-radius: 50%;
 
 }
+
+
+/* profile menu design................ */
+.profile-menu{
+    height: calc(100vh - 3.5rem);
+    width: 17rem;
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    z-index: 10;
+    padding: 1rem 1.2rem;
+    background-color: rgb(239, 239, 239);
+}
+.details-profile-menu h2{
+    font-size: 1rem;
+    line-height: 115%;
+    font-weight: 500;
+    color: rgb(36, 36, 36);
+}
+.details-profile-menu{
+    margin-left: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.details-profile-menu p{
+    font-size: 0.9rem;
+    line-height: 115%;
+    font-weight: 300;
+    color: rgb(104, 104, 104);
+}
+.border-bottom-profile{
+    padding: 1rem;
+    border-radius: 5px;
+    border-bottom: 1.5px solid rgb(190, 190, 190);
+    justify-content: flex-start;
+}
+.secondry-profile-img img{
+    width: 50px;
+    height: 50px;
+}
+.profile-menu-icon{
+    height: 40px;
+    width: 40px;
+}
+
+
 /* community navigation */
 .community-nav{
     height: 3rem;

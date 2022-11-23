@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="../login.css" />
   </head>
   <body>
+    <div class="notification">
+      <p>notification content</p>
+      <button type="button" id="dismiss">DISMISS</button>
+    </div>
     <div class="community-registration-container">
       <div class="left-com-reg">
         <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-        <img src="../I
-        MG/icons/comunitu-reg-1.png" alt="">
+        <img src="../IMG/icons/comunitu-reg-1.png" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates nemo aut dicta quam nostrum, ad ut autem fugit illum.</p>
         <img src="../IMG/icons/comunity-reg-2.png" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates nemo aut dicta quam nostrum, ad ut autem fugit illum.</p>
@@ -20,8 +23,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates nemo aut dicta quam nostrum, ad ut autem fugit illum.</p>
         <img src="../IMG/icons/community-reg-4.png" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates nemo aut dicta quam nostrum, ad ut autem fugit illum.</p>
-        <img src="../IMG/icons/community-reg-4.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates nemo aut dicta quam nostrum, ad ut autem fugit illum.</p>
+        
       </div>
       <div class="right-com-reg">
         <div class="com-reg-content">
@@ -29,104 +31,57 @@
             <h3>Register your community</h3>
             <p class="register-section-split">Genral info</p>
             <div class="full-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
+              <input class="input__reg" type="text" placeholder="Name of community" name="name" required/>
             </div>
             <div class="full-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
+              <input class="input__reg" type="text" placeholder="Unique username of community" name="username" required/>
+            </div>
+            <div class="full-row-input">
+              <input class="input__reg" type="email" placeholder="Email" name="email" required />
             </div>
             <div class="half-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
-              <input class="input__reg" type="text" placeholder="name" />
+              <input class="input__reg" type="email" placeholder="Alternate email" name="alt_email" />
+              <input class="input__reg" type="text" placeholder="Contact No." name="contact" />
             </div>
+            <p class="register-section-split">Social info</p>
             <div class="full-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
+              <input class="input__reg" type="text" placeholder="Website URL" name="website" />
             </div>
+            <div class="half-row-input">
+              <input class="input__reg" type="text" placeholder="Instagram profile URL" name="instagram" />
+              <input class="input__reg" type="text" placeholder="linkedin profile URL" name="linkedin" />
+            </div>
+            <div class="half-row-input">
+              <input class="input__reg" type="text" placeholder="Facebook profile URL" name="facebook" />
+              <input class="input__reg" type="text" placeholder="Twitter profile URL" name="twitter" />
+            </div>
+            
+            
+            <p class="register-section-split">About</p>
             <div class="full-row-input">
               <textarea
-                name=""
-                id=""
+                name="discription"
+                class="input__reg"
+                cols="30"
+                rows="5"
+              >Discription of Community (max 40 wordes)
+              </textarea>
+              </div>
+              <div class="full-row-input">
+              <textarea
+                name="about"
                 class="input__reg"
                 cols="30"
                 rows="10"
-                placeholder="about"
-              >
-              </textarea>
-            </div>
-            <p class="register-section-split">Genral info</p>
-            <div class="half-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
-              <input class="input__reg" type="text" placeholder="name" />
-            </div>
-            <div class="full-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
-            </div>
-            <div class="full-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
-            </div>
-            <div class="half-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
-              <input class="input__reg" type="text" placeholder="name" />
-            </div>
-            <div class="half-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
-              <input class="input__reg" type="text" placeholder="name" />
-            </div>
-            <div class="half-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
-              <input class="input__reg" type="text" placeholder="name" />
-            </div>
-            <p class="register-section-split">Genral info</p>
-            <div class="half-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
-              <input class="input__reg" type="text" placeholder="name" />
-            </div>
-            <div class="half-row-input">
-              <input class="input__reg" type="text" placeholder="name" />
-              <input class="input__reg" type="text" placeholder="name" />
-            </div>
-            <p class="register-section-split">Genral info</p>
-            <div class="full-row-input">
-              <textarea
-                name=""
-                id=""
-                class="input__reg"
-                cols="30"
-                rows="10"
-                placeholder="about"
-              >
-              </textarea>
-            </div>
-            <div class="full-row-input">
-              <textarea
-                name=""
-                id=""
-                class="input__reg"
-                cols="30"
-                rows="10"
-                placeholder="about"
-              >
-              </textarea>
-            </div>
-            <div class="full-row-input">
-              <textarea
-                name=""
-                id=""
-                class="input__reg"
-                cols="30"
-                rows="10"
-                placeholder="about"
-              >
-              </textarea>
+              >About your Community (max 350 wordes)</textarea>
             </div>
             <div class="full-row-button">
-              <button>Submit</button>
+              <button type="submit">Submit</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <!-- <script>
-        var winHeight =document.body.clientHeight;
-    </script> -->
+    
   </body>
 </html>
